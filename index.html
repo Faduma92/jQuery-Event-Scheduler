@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery Event Scheduler</title>
+    <meta name="description" content="A schedule management with jQuery.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="jquery.schedule.css">
+    <link rel="stylesheet" href="jquery.schedule2.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-dark bg-dark mb-3">
+        <h1 class="navbar-brand mb-0">Daily Event Scheduler</h1>
+    </nav>
+</header>
+
+        <div class="row">
+            <div class="col-lg-8">
+                <div id="schedule4" class="jqs-demo mb-3"></div>
+            </div>
+            
+        
+    </div>
+</main>
+
+<footer>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="jquery.schedule.js"></script>
+<script>
+  $(function () {
+
+    $('#schedule4').jqs({
+      days: 5,
+      periodColors: [
+        ['rgba(0, 0, 0, 0.5)', '#000', '#fff'],
+        ['rgba(200, 0, 0, 0.5)', '#f00', '#000'],
+        ['rgba(0, 200, 0, 0.5)', '#0f0', '#000'],
+        ['rgba(0, 0, 200, 0.5)', '#00f', '#000']
+      ],
+      periodTitle: 'No title',
+      periodBackgroundColor: 'rgba(0, 0, 0, 0.5)',
+      periodBorderColor: '#000',
+      periodTextColor: '#fff',
+      periodRemoveButton: 'Remove please !',
+      periodTitlePlaceholder: 'A custom title'
+    });
+
+
+    $('#export').click(function () {
+      $('#result').val($('#schedule3').jqs('export'));
+    });
+
+
+    $('#reset').click(function () {
+      $('#schedule3').jqs('reset');
+      $('#result').val('');
+    });
+  });
+</script>
+
+</body>
+</html>
