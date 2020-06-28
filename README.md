@@ -1,5 +1,7 @@
 ## Workday Planner 
 
+Link to GitHub Pages: https://faduma92.github.io/jQuery-Event-Scheduler/
+
 The application displays timeblocks for standard business hours (9 a.m. to 5 p.m.) as well as the current date and day of the week using Momentjs.
 
 
