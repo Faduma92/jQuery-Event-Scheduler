@@ -95,7 +95,7 @@ $(".btn-save9").on("click", function () {
 
 // Making event Handler for "Remove" Function
 
-$(".btn-remove").on("click", function () {
+$(".btn-remove1").on("click", function () {
     var currentRemoveBtn = $(this).attr("data-number")
     var clearInput = $("#" + currentRemoveBtn)
     localStorage.removeItem('server')
@@ -181,16 +181,15 @@ var number9 = $("#17").attr("id")
 
 
 
-if (number1 < currentHour) {
-    $("#9").attr("style", "background-color: rgba(200, 0, 0, 0.5)");
+if ( number1 < currentHour ) {
+    $("#9").attr("style", "background-color: rgba(0, 200, 0, 0.5)");
 }
 else if (number1 == currentHour) {
     $("#9").attr("style", "background-color: rgba(82, 155, 255, 0.5)");
 }
-else {
-    $("#9").attr("style", "background-color: rgba(0, 200, 0, 0.5)"); 
+else if(number1 > currentHour) {
+    $("#9").attr("style", "background-color: rgba(0, 200, 0, 0.5)")
 }
-
 
 
 if (number2 < currentHour) {

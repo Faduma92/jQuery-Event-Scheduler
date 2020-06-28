@@ -7,7 +7,6 @@
     <title>Daily Schedule</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="./app.css" />
 
 </head>
 
@@ -17,145 +16,161 @@
         <h1 class="currentTime" style="text-align: center; width: 100%;">Current Time:</h1>
     </div>
 
-        
-                <h2 class="currentDay" style="text-align: center; width: 100%;"></h2>
-                
-    <div class="container">
-    <table class="table">
-       
-        <tbody>
-            <tr id="nine-am">
-                <th  scope="row">9 am</th>
-                <td><input  id="9" type="text" class="form-control" aria-label="..." style="text-align: center; width: 100%;"  name="server"></td>
-                <td>
-                    <button data-number="9" type="button" class="btn btn-primary btn-save1">
-                        Save
-                    </button>
-                </td>
-                <td>
-                    <button data-number="9" type="button" class="btn btn-danger btn-remove1">
-                        Remove
-                    </button>
-                </td>
-            </tr>
-            
 
-            <tr id="ten-am">
-                <th scope="row">10 am</th>
-                <td><input id="10" type="text" class="form-control" aria-label="..." style="text-align: center; width: 100%;" name="server2"></td>
-                <td>
-                    <button data-number="10" type="button" class="btn btn-primary btn-save2">
-                        Save
-                    </button>
-                </td>
-                <td>
-                    <button data-number="10" type="button" class="btn btn-danger btn-remove2">
-                        Remove
-                    </button>
-                </td>
-               
-            </tr> <tr id="eleven-am">
-                <th scope="row">11 am</th>
-                <td><input id="11" type="text" class="form-control" aria-label="..." style="text-align: center; width: 100%;" name="server3"></td>
-                <td>
-                    <button data-number="11" type="button" class="btn btn-primary btn-save3">
-                        Save
-                    </button>
-                </td>
-                <td>
-                    <button data-number="11" type="button" class="btn btn-danger btn-remove3">
-                        Remove
-                    </button>
-                </td>
-               
-            </tr> <tr id="twelve-pm">
-                <th scope="row">12 pm</th>
-                <td><input id="12" type="text" class="form-control" aria-label="..." style="text-align: center; width: 100%;" name="server4"></td>
-                <td>
-                    <button data-number="12" type="button" class="btn btn-primary btn-save4">
-                        Save
-                    </button>
-                </td>
-                <td>
-                    <button data-number="12" type="button" class="btn btn-danger btn-remove4">
-                        Remove
-                    </button>
-                </td>
-               
-            </tr> <tr id="one-pm">
-                <th scope="row">1 pm</th>
-                <td><input id="13" type="text" class="form-control" aria-label="..." style="text-align: center; width: 100%;" name="server5"></td>
-                <td>
-                    <button data-number="1" type="button" class="btn btn-primary btn-save5">
-                        Save
-                    </button>
-                </td>
-                <td>
-                    <button data-number="1" type="button" class="btn btn-danger btn-remove5">
-                        Remove
-                    </button>
-                </td>
-               
-            </tr> <tr id="two-pm">
-                <th scope="row">2 pm</th>
-                <td><input id="14" type="text" class="form-control" aria-label="..." style="text-align: center; width: 100%;" name="server6"></td>
-                <td>
-                    <button data-number="2" type="button" class="btn btn-primary btn-save6">
-                        Save
-                    </button>
-                </td>
-                <td>
-                    <button data-number="2" type="button" class="btn btn-danger btn-remove6">
-                        Remove
-                    </button>
-                </td>
-               
-            </tr> <tr id="three-pm">
-                <th scope="row">3 pm</th>
-                <td><input id="15" type="text" class="form-control" aria-label="..." style="text-align: center; width: 100%;" name="server7"></td>
-                <td>
-                    <button data-number="3" type="button" class="btn btn-primary btn-save7">
-                        Save
-                    </button>
-                </td>
-                <td>
-                    <button data-number="3" type="button" class="btn btn-danger btn-remove7">
-                        Remove
-                    </button>
-                </td>
-               
-            </tr> <tr id="four-pm">
-                <th scope="row">4 pm</th>
-                <td><input id="16" type="text" class="form-control" aria-label="..." style="text-align: center; width: 100%;" name="server8"></td>
-                <td>
-                    <button data-number="4" type="button" class="btn btn-primary btn-save8">
-                        Save
-                    </button>
-                </td>
-                <td>
-                    <button data-number="4" type="button" class="btn btn-danger btn-remove8">
-                        Remove
-                    </button>
-                </td>
-               
-            </tr> <tr id="five-pm">
-                <th scope="row">5 pm</th>
-                <td><input id="17" type="text" class="form-control" aria-label="..." style="text-align: center; width: 100%;" name="server9"></td>
-                <td>
-                    <button data-number="5" type="button" class="btn btn-primary btn-save9">
-                        Save
-                    </button>
-                </td>
-                <td>
-                    <button data-number="5" type="button" class="btn btn-danger btn-remove9">
-                        Remove
-                    </button>
-                </td>
-               
-            </tr>
-        </tbody>
-    </table>
-</div>
+    <div class="container">
+        <h2 class="currentDay" style="text-align: center; width: 100%;"></h2>
+
+        <table class="table">
+
+            <tbody>
+                <tr id="nine-am">
+                    <th scope="row">9 am</th>
+                    <td><input id="9" type="text" class="form-control" aria-label="..."
+                            style="text-align: center; width: 100%;" name="server"></td>
+                    <td>
+                        <button data-number="9" type="button" class="btn btn-primary btn-save1">
+                            Save
+                        </button>
+                    </td>
+                    <td>
+                        <button data-number="9" type="button" class="btn btn-danger btn-remove1">
+                            Remove
+                        </button>
+                    </td>
+                </tr>
+
+
+                <tr id="ten-am">
+                    <th scope="row">10 am</th>
+                    <td><input id="10" type="text" class="form-control" aria-label="..."
+                            style="text-align: center; width: 100%;" name="server2"></td>
+                    <td>
+                        <button data-number="10" type="button" class="btn btn-primary btn-save2">
+                            Save
+                        </button>
+                    </td>
+                    <td>
+                        <button data-number="10" type="button" class="btn btn-danger btn-remove2">
+                            Remove
+                        </button>
+                    </td>
+
+                </tr>
+                <tr id="eleven-am">
+                    <th scope="row">11 am</th>
+                    <td><input id="11" type="text" class="form-control" aria-label="..."
+                            style="text-align: center; width: 100%;" name="server3"></td>
+                    <td>
+                        <button data-number="11" type="button" class="btn btn-primary btn-save3">
+                            Save
+                        </button>
+                    </td>
+                    <td>
+                        <button data-number="11" type="button" class="btn btn-danger btn-remove3">
+                            Remove
+                        </button>
+                    </td>
+
+                </tr>
+                <tr id="twelve-pm">
+                    <th scope="row">12 pm</th>
+                    <td><input id="12" type="text" class="form-control" aria-label="..."
+                            style="text-align: center; width: 100%;" name="server4"></td>
+                    <td>
+                        <button data-number="12" type="button" class="btn btn-primary btn-save4">
+                            Save
+                        </button>
+                    </td>
+                    <td>
+                        <button data-number="12" type="button" class="btn btn-danger btn-remove4">
+                            Remove
+                        </button>
+                    </td>
+
+                </tr>
+                <tr id="one-pm">
+                    <th scope="row">1 pm</th>
+                    <td><input id="13" type="text" class="form-control" aria-label="..."
+                            style="text-align: center; width: 100%;" name="server5"></td>
+                    <td>
+                        <button data-number="1" type="button" class="btn btn-primary btn-save5">
+                            Save
+                        </button>
+                    </td>
+                    <td>
+                        <button data-number="1" type="button" class="btn btn-danger btn-remove5">
+                            Remove
+                        </button>
+                    </td>
+
+                </tr>
+                <tr id="two-pm">
+                    <th scope="row">2 pm</th>
+                    <td><input id="14" type="text" class="form-control" aria-label="..."
+                            style="text-align: center; width: 100%;" name="server6"></td>
+                    <td>
+                        <button data-number="2" type="button" class="btn btn-primary btn-save6">
+                            Save
+                        </button>
+                    </td>
+                    <td>
+                        <button data-number="2" type="button" class="btn btn-danger btn-remove6">
+                            Remove
+                        </button>
+                    </td>
+
+                </tr>
+                <tr id="three-pm">
+                    <th scope="row">3 pm</th>
+                    <td><input id="15" type="text" class="form-control" aria-label="..."
+                            style="text-align: center; width: 100%;" name="server7"></td>
+                    <td>
+                        <button data-number="3" type="button" class="btn btn-primary btn-save7">
+                            Save
+                        </button>
+                    </td>
+                    <td>
+                        <button data-number="3" type="button" class="btn btn-danger btn-remove7">
+                            Remove
+                        </button>
+                    </td>
+
+                </tr>
+                <tr id="four-pm">
+                    <th scope="row">4 pm</th>
+                    <td><input id="16" type="text" class="form-control" aria-label="..."
+                            style="text-align: center; width: 100%;" name="server8"></td>
+                    <td>
+                        <button data-number="4" type="button" class="btn btn-primary btn-save8">
+                            Save
+                        </button>
+                    </td>
+                    <td>
+                        <button data-number="4" type="button" class="btn btn-danger btn-remove8">
+                            Remove
+                        </button>
+                    </td>
+
+                </tr>
+                <tr id="five-pm">
+                    <th scope="row">5 pm</th>
+                    <td><input id="17" type="text" class="form-control" aria-label="..."
+                            style="text-align: center; width: 100%;" name="server9"></td>
+                    <td>
+                        <button data-number="5" type="button" class="btn btn-primary btn-save9">
+                            Save
+                        </button>
+                    </td>
+                    <td>
+                        <button data-number="5" type="button" class="btn btn-danger btn-remove9">
+                            Remove
+                        </button>
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -164,7 +179,7 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
     <script src="app.js"></script>
-  
+
 </body>
 
 </html>
